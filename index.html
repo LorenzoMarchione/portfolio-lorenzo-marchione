@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -10,12 +11,12 @@
         <h1>Lorenzo Marchione</h1>
         <nav>
             <ul>
-                <li><a href="">Presentación</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">Experiencia laboral</a></li>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Redes Sociales y CV</a></li>
+                <li><button>Presentación</button></li>
+                <li><button>Proyectos</button></li>
+                <li><button>Experiencia laboral</button></li>
+                <li><button>Habilidades</button></li>
+                <li><button>Contacto</button></li>
+                <li><button>Redes Sociales y CV</button></li>
             </ul>
         </nav>
     </header>
@@ -23,29 +24,34 @@
         <section class="hero">
             <div class="info-breve">
                 <h3>Lorenzo Esteban Marchione Revilla</h3>
-                <h2>Técnico Universitario en Programación</h2>
-                <h2>Desarrollador Web Frontend Junior</h2>
+                <div>
+                    <h2>Técnico Universitario en Programación</h2>
+                    <h2>Desarrollador Web Frontend Junior</h2>
+                </div>
                 <p>Soy un técnico en programacion a punto de recibirme de la UTN Facultad Regional de Paraná y completando un curso de Desarrollador Web dado por la UTN Facultad Regional de Buenos Aires</p>
             </div>
             <div class="foto">
-                <img src="img/yo.jpg" alt="Foto de Lorenzo Marchione">
+                <img src="img/yo.jpeg" alt="Foto de Lorenzo Marchione">
         </section>
-        <section class="proyectos">
+        <section class="trabajos">
+            <!-- haga click en las imagenes para visitar la pagina -->
             <h2>Proyectos</h2>
-            <div class="proyecto">
-                <h3>Flexbox Clon: Easy Design Services</h3>
-                <a href="https://lorenzomarchione.github.io/tp3-flexbox-clon"><img src="img/flexbox-clon.jpeg" alt="" ></a>
-                <p>Este es un Trabajo Práctico para la materia de Diseño Web. El objetivo fue replicar fielmente el diseño de una landing page profesional utilizando solamente HTML, CSS y Flexbox, sin el uso de frameworks.</p>
-            </div>
-            <div class="proyecto">
-                <h3>🍽️ Rogier - Menú Digital Estático</h3>
-                <a href="https://lorenzomarchione.github.io/menu-digital"><img src="img/rogier.jpeg" alt=""></a>
-                <p>Este proyecto consiste en una página web simple que muestra el menú de un restaurante ficticio llamado Rogier. Fue realizado como parte de un trabajo practico del curso d desarrollador web</p>
-            </div>
-            <div class="proyecto">
-                <h3>Tarjeta de Presentación</h3>
-                <a href="https://lorenzomarchione.github.io/tarjeta-presentacion"><img src="img/tarjeta-presentacion.jpeg" alt=""></a>
-                <p>Este proyecto es una tarjeta de presentación personal creada como parte del curso de Desarrollador Fullstack. Su objetivo es aplicar y reforzar conocimientos fundamentales de HTML y CSS en una estructura web simple.</p>
+            <div class="proyectos">
+                <div class="proyecto">
+                    <h3>Flexbox Clon</h3>
+                    <a href="https://lorenzomarchione.github.io/tp3-flexbox-clon"><img src="img/flexbox-clon.jpeg" alt="" ></a>
+                    <p>Este es un Trabajo Práctico para la materia de Diseño Web. El objetivo fue replicar fielmente el diseño de una landing page profesional utilizando solamente HTML, CSS y Flexbox, sin el uso de frameworks.</p>
+                </div>
+                <div class="proyecto">
+                    <h3>🍽️ Rogier - Menú Digital Estático</h3>
+                    <a href="https://lorenzomarchione.github.io/menu-digital"><img src="img/rogier.jpeg" alt=""></a>
+                    <p>Este proyecto consiste en una página web simple que muestra el menú de un restaurante ficticio llamado Rogier. Fue realizado como parte de un trabajo practico del curso d desarrollador web</p>
+                </div>
+                <div class="proyecto">
+                    <h3>Tarjeta de Presentación</h3>
+                    <a href="https://lorenzomarchione.github.io/tarjeta-presentacion"><img src="img/tarjeta-presentacion.jpeg" alt=""></a>
+                    <p>Este proyecto es una tarjeta de presentación personal creada como parte del curso de Desarrollador Fullstack. Su objetivo es aplicar y reforzar conocimientos fundamentales de HTML y CSS en una estructura web simple.</p>
+                </div>
             </div>
             <section class="experiencia">
                 <h2>Experiencia Laboral</h2>
@@ -58,11 +64,10 @@
                     <li><img src="img/csharp-logo.png" alt="C#" width="24"> C#</li>
                     <li><img src="img/mongodb-logo.png" alt="MongoDB" width="24"> MongoDB (NoSQL)</li>
                     <li><img src="img/postgresql-logo.png" alt="PostgreSQL" width="24"> PostgreSQL</li>
-                    <li><img src="img/html-logo.png" alt="HTML" width="24"> HTML</li>
+                    <li><img src="img/html5-logo.png" alt="HTML" width="24"> HTML</li>
                     <li><img src="img/css-logo.png" alt="CSS" width="24"> CSS</li>
-                    <li><img src="img/js-logo.png" alt="JavaScript" width="24"> JavaScript</li>
+                    <li><img src="img/javascript-logo.png" alt="JavaScript" width="24"> JavaScript</li>
                     <li><img src="img/git-logo.png" alt="Git" width="24"> Git y GitHub</li>
-                    <li><img src="img/responsive-logo.png" alt="Responsive Design" width="24"> Responsive Design</li>
                 </ul>
             </section>
             <section class="contacto">

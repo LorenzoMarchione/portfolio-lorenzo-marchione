@@ -4,102 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Portfolio</title>
 </head>
-<body>
-    <header>
-        <h1>Lorenzo Marchione</h1>
+<body class="font-sans bg-slate-50">
+    <header class="flex flex-col items-center border-b-4 border-slate-900 px-5 pt-4 w-full">
+        <h1 class="text-4xl font-bold py-2">Lorenzo Marchione</h1>
         <nav>
-            <ul>
-                <li><button>Presentación</button></li>
-                <li><button>Proyectos</button></li>
-                <li><button>Experiencia laboral</button></li>
-                <li><button>Habilidades</button></li>
-                <li><button>Contacto</button></li>
-                <li><button>Redes Sociales y CV</button></li>
+            <ul class="flex flex-row">
+                <li><button class="w-full px-2 py-4 hover:bg-slate-400 transition duration-300">Presentación</button></li>
+                <li><button class="w-full px-2 py-4 hover:bg-slate-400 transition duration-300">Proyectos</button></li>
+                <li><button class="w-full px-2 py-4 hover:bg-slate-400 transition duration-300">Experiencia laboral</button></li>
+                <li><button class="w-full px-2 py-4 hover:bg-slate-400 transition duration-300">Habilidades</button></li>
+                <li><button class="w-full px-2 py-4 hover:bg-slate-400 transition duration-300">Contacto</button></li>
+                <li><button class="w-full px-2 py-4 hover:bg-slate-400 transition duration-300">Redes Sociales y CV</button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="info-breve">
-                <h3>Lorenzo Esteban Marchione Revilla</h3>
-                <div class="titulos">
+        <section class="bg-slate-200 flex flex-row px-10 py-5 max-h-screen gap-4">
+            <div class="flex flex-col justify-around">
+                <h3 class="text-2xl font-semibold">Lorenzo Esteban Marchione Revilla</h3>
+                <div class="text-3xl font-semibold">
                     <h3>Técnico Universitario en Programación</h3>
                     <h3>Desarrollador Web Frontend Junior</h3>
                 </div>
                 <p>Soy un técnico en programacion a punto de recibirme de la UTN Facultad Regional de Paraná y completando un curso de Desarrollador Web dado por la UTN Facultad Regional de Buenos Aires</p>
             </div>
-            <div class="foto">
-                <img src="img/yo.jpeg" alt="Foto de Lorenzo Marchione">
+            <div class="border-2 border-slate-900 rounded-4xl max-w-xs max-h-xs">
+                <img class="object-cover p-4 rounded-4xl" src="img/yo.jpeg" alt="Foto de Lorenzo Marchione">
         </section>
-        <section class="trabajos">
+        <section class="px-10 py-5">
             <!-- haga click en las imagenes para visitar la pagina -->
-            <h2>Proyectos</h2>
-            <div class="proyectos">
-                <div class="proyecto">
-                    <h3>Flexbox Clon</h3>
-                    <a href="https://lorenzomarchione.github.io/tp3-flexbox-clon"><img src="img/flexbox-clon.jpeg" alt="" ></a>
+            <h2 class="text-3xl font-semibold py-4 border-b-4 border-slate-900">Proyectos</h2>
+            <div class="flex flex-wrap gap-4 justify-around">
+                <div class="max-w-xs">
+                    <h3 class="text-center text-lg font-semibold">Flexbox Clon</h3>
+                    <a href="https://lorenzomarchione.github.io/tp3-flexbox-clon" target="_blank"><img class="rounded-lg shadow-md/50 hover:scale-103 transition duration-300" src="img/flexbox-clon.jpeg" alt="" ></a>
                     <p>Este es un Trabajo Práctico para la materia de Diseño Web. El objetivo fue replicar fielmente el diseño de una landing page profesional utilizando solamente HTML, CSS y Flexbox, sin el uso de frameworks.</p>
                 </div>
-                <div class="proyecto">
-                    <h3>🍽️ Rogier - Menú Digital Estático</h3>
-                    <a href="https://lorenzomarchione.github.io/menu-digital"><img src="img/rogier.jpeg" alt=""></a>
+                <div class="max-w-xs">
+                    <h3 class="text-center text-lg font-semibold">🍽️ Rogier - Menú Digital Estático</h3>
+                    <a href="https://lorenzomarchione.github.io/menu-digital" target="_blank"><img class="rounded-lg shadow-md/50 hover:scale-103 transition duration-300" src="img/rogier.jpeg" alt=""></a>
                     <p>Este proyecto consiste en una página web simple que muestra el menú de un restaurante ficticio llamado Rogier. Fue realizado como parte de un trabajo practico del curso d desarrollador web</p>
                 </div>
-                <div class="proyecto">
-                    <h3>Tarjeta de Presentación</h3>
-                    <a href="https://lorenzomarchione.github.io/tarjeta-presentacion"><img src="img/tarjeta-presentacion.jpeg" alt=""></a>
+                <div class="max-w-xs">
+                    <h3 class="text-center text-lg font-semibold">Tarjeta de Presentación</h3>
+                    <a href="https://lorenzomarchione.github.io/tarjeta-presentacion" target="_blank"><img class="rounded-lg shadow-md/50 hover:scale-103 transition duration-300" src="img/tarjeta-presentacion.jpeg" alt=""></a>
                     <p>Este proyecto es una tarjeta de presentación personal creada como parte del curso de Desarrollador Fullstack. Su objetivo es aplicar y reforzar conocimientos fundamentales de HTML y CSS en una estructura web simple.</p>
                 </div>
             </div>
         </section>
-        <section class="experiencia">
-            <h2>Experiencia Laboral</h2>
-            <ul>
+        <section class="bg-slate-200 px-10 py-5">
+            <h2 class="text-3xl font-semibold py-4 border-b-4 border-slate-900">Experiencia Laboral</h2>
+            <ul class="list-inside list-disc">
                 <li>Actualmente no cuento con experiencia laboral en el área de desarrollo web o programación.</li>
                 <li>He realizado trabajos prácticos y proyectos personales que me han permitido adquirir habilidades en programación y desarrollo web.</li>
                 <li>Estoy buscando oportunidades para aplicar mis conocimientos y seguir aprendiendo en un entorno profesional.</li>
             </ul>
         </section>
-        <section class="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li><img src="img/java-logo.png" alt="Java"> Java</li>
-                <li><img src="img/csharp-logo.png" alt="C#"> C#</li>
-                <li><img src="img/mongodb-logo.png" alt="MongoDB"> MongoDB (NoSQL)</li>
-                <li><img src="img/postgresql-logo.png" alt="PostgreSQL"> PostgreSQL</li>
-                <li><img src="img/html5-logo.png" alt="HTML"> HTML</li>
-                <li><img src="img/css-logo.png" alt="CSS"> CSS</li>                    <li><img src="img/javascript-logo.png" alt="JavaScript"> JavaScript</li>
-                <li><img src="img/git-logo.png" alt="Git"> Git y GitHub</li>
+        <section class="px-10 py-5">
+            <h2 class="text-3xl font-semibold py-4 border-b-4 border-slate-900">Habilidades</h2>
+            <ul class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 justify-items-stretch list-none py-4">
+                <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/java-logo.png" alt="Java"> Java</li>
+                <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/csharp-logo.png" alt="C#"> C#</li>
+                <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/mongodb-logo.png" alt="MongoDB"> MongoDB (NoSQL)</li>
+                <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/postgresql-logo.png" alt="PostgreSQL"> PostgreSQL</li>
+                <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/html5-logo.png" alt="HTML"> HTML</li>
+                <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/css-logo.png" alt="CSS"> CSS</li>                    
+                <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/javascript-logo.png" alt="JavaScript"> JavaScript</li>
+                <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/git-logo.png" alt="Git"> Git y GitHub</li>
             </ul>
         </section>
-        <section class="contacto">
-            <form action="">
-                <h2>Contacteme!</h2>
-                <div class="datos-personales">
+        <section class="px-10 py-5 bg-slate-200">
+            <h2 class="text-3xl font-semibold py-4 border-b-4 border-slate-900">Contacteme!</h2>
+            <form class="flex flex-col items-center py-5" action="">
+                <div class="flex flex-row gap-4 max-w-1/3 w-full justify-center">
                     <div>
-                        <h4>Nombre</h4>
-                        <input type="text" placeholder="Nombre" required>
+                        <h4 class="font-semibold">Nombre</h4>
+                        <input class="bg-white border border-black rounded-sm" type="text" placeholder="Nombre" required>
                     </div>
                     <div>
-                        <h4>Email</h4>
-                        <input type="email" placeholder="Email" required>
+                        <h4 class="font-semibold">Email</h4>
+                        <input class="bg-white border border-black rounded-sm" type="email" placeholder="Email" required>
                     </div>
                 </div>
-                <div>
-                    <h4>Mensaje</h4>
-                    <textarea class="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                <div class="mt-4 w-full max-w-1/3">
+                    <h4 class="font-semibold">Mensaje</h4>
+                    <textarea class="w-full resize-none bg-white border border-black rounded-sm" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
                 </div>
-                <button>Enviar</button>
+                <button class="bg-indigo-950 font-semibold text-white py-2 px-4 rounded-lg hover:bg-blue-800 hover:scale-105">Enviar</button>
             </form>
         </section>
-        <section class="social">
-            <h2>Redes Sociales y CV</h2>
-            <p>Para ver mi currículum vitae y mis redes sociales, puedes visitar los siguientes enlaces:</p>
-            <ul>
-                <li><a href="https://github.com/LorenzoMarchione" target="_blank"> Mi GitHub</a></li>
-                <li><a href="" target="_blank"> Mi LinkedIn</a></li> <!-- todavia no tengo LinkedIn -->                    <li><a href="">Descargue mi CV</a></li>
+        <section class="px-10 py-5">
+            <h2 class="text-3xl font-semibold py-4 border-b-4 border-slate-900">Redes Sociales y CV</h2>
+            <p class="text-center py-2">Para ver mi currículum vitae y mis redes sociales, puedes visitar los siguientes enlaces:</p>
+            <ul class="list-none flex flex-row justify-center gap-4">
+                <li><a class="hover:text-blue-600 hover:underline" href="https://github.com/LorenzoMarchione" target="_blank"> Mi GitHub</a></li>
+                <li><a class="hover:text-blue-600 hover:underline" href="" target="_blank"> Mi LinkedIn</a></li> <!-- todavia no tengo LinkedIn -->                    
+                <li><a class="hover:text-blue-600 hover:underline" href="">Descargue mi CV</a></li><!-- CV en proceso de creacion -->
             </ul>     
         </section>
     </main>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,65 +8,65 @@
     <title>Portfolio</title>
 </head>
 <body class="font-sans bg-slate-50">
-    <header class="flex flex-col items-center border-b-4 border-slate-900 lg:px-5 lg:pt-4 md:px-3 md:pt-2 w-full">
-        <h1 class="lg:text-4xl md:text-3xl font-bold lg:py-2 md:py-1">Lorenzo Marchione</h1>
+    <header class="flex flex-col items-center border-b-4 border-slate-900 lg:px-5 lg:pt-4 px-3 pt-2 w-full">
+        <h1 class="lg:text-4xl text-3xl text-2xl font-bold lg:py-2 py-1">Lorenzo Marchione</h1>
         <nav>
-            <ul class="lg:flex lg:flex-row md:grid md:grid-cols-2 md:grid-rows-3 md:pb-3">
-                <li><button class="w-full lg:px-2 lg:py-4 md:py-2 hover:bg-slate-400 transition duration-300">Presentación</button></li>
-                <li><button class="w-full lg:px-2 lg:py-4 md:py-2 hover:bg-slate-400 transition duration-300">Proyectos</button></li>
-                <li><button class="w-full lg:px-2 lg:py-4 md:py-2 hover:bg-slate-400 transition duration-300">Experiencia laboral</button></li>
-                <li><button class="w-full lg:px-2 lg:py-4 md:py-2 hover:bg-slate-400 transition duration-300">Habilidades</button></li>
-                <li><button class="w-full lg:px-2 lg:py-4 md:py-2 hover:bg-slate-400 transition duration-300">Contacto</button></li>
-                <li><button class="w-full lg:px-2 lg:py-4 md:py-2 hover:bg-slate-400 transition duration-300">Redes Sociales y CV</button></li>
+            <ul class="lg:flex lg:flex-row grid grid-cols-2 grid-rows-3 pb-3">
+                <li><button class="scroll-btn w-full lg:px-2 lg:py-4 py-2 hover:bg-slate-400 transition duration-300" data-target="presentacion">Presentación</button></li>
+                <li><button class="scroll-btn w-full lg:px-2 lg:py-4 py-2 hover:bg-slate-400 transition duration-300" data-target="proyectos">Proyectos</button></li>
+                <li><button class="scroll-btn w-full lg:px-2 lg:py-4 py-2 hover:bg-slate-400 transition duration-300" data-target="experiencia-laboral">Experiencia laboral</button></li>
+                <li><button class="scroll-btn w-full lg:px-2 lg:py-4 py-2 hover:bg-slate-400 transition duration-300" data-target="tecnologias">Tecnologias</button></li>
+                <li><button class="scroll-btn w-full lg:px-2 lg:py-4 py-2 hover:bg-slate-400 transition duration-300" data-target="contacto">Contacto</button></li>
+                <li><button class="scroll-btn w-full lg:px-2 lg:py-4 py-2 hover:bg-slate-400 transition duration-300" data-target="github-cv">GitHub y CV</button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="bg-slate-200 flex flex-row md:justify-between lg:px-10 lg:py-5 md:pl-6 md:py-3 max-h-screen lg:gap-4">
-            <div class="flex flex-col lg:justify-around md:justify-center">
-                <h3 class="lg:text-2xl md:text-lg md:py-2 font-semibold">Lorenzo Esteban Marchione Revilla</h3>
-                <div class="lg:text-3xl md:text-xl md:py-2 font-semibold">
+        <section class="bg-slate-200 flex flex-row justify-between lg:px-10 lg:py-5 pl-6 py-3 max-h-screen lg:gap-4" id="presentacion">
+            <div class="flex flex-col lg:justify-around justify-center">
+                <h3 class="lg:text-2xl text-lg py-2 font-semibold">Lorenzo Esteban Marchione Revilla</h3>
+                <div class="lg:text-3xl text-xl py-2 font-semibold">
                     <h3>Técnico Universitario en Programación</h3>
                     <h3>Desarrollador Web Frontend Junior</h3>
                 </div>
                 <p>Soy un técnico en programacion a punto de recibirme de la UTN Facultad Regional de Paraná y completando un curso de Desarrollador Web dado por la UTN Facultad Regional de Buenos Aires</p>
             </div>
-            <div class="border-2 border-slate-900 lg:rounded-4xl md:rounded-s-full max-w-xs max-h-xs">
-                <img class="w-full h-full object-cover lg:p-4 md:p-2 lg:rounded-4xl md:rounded-s-full" src="img/yo.jpeg" alt="Foto de Lorenzo Marchione">
+            <div class="border-2 border-slate-900 lg:rounded-4xl rounded-s-full max-w-xs max-h-xs">
+                <img class="w-full h-full object-cover lg:p-4 p-2 lg:rounded-4xl rounded-s-full" src="img/yo.jpeg" alt="Foto de Lorenzo Marchione">
             </div>
         </section>
-        <section class="lg:px-10 lg:py-5 md:px-6 md:py-3">
+        <section class="lg:px-10 lg:py-5 px-6 py-3" id="proyectos">
             <!-- haga click en las imagenes para visitar la pagina -->
-            <h2 class="lg:text-3xl md:text-2xl font-semibold lg:py-4 border-b-4 border-slate-900">Proyectos</h2>
-            <div class="flex flex-wrap lg:gap-4 md:gap-3 justify-around">
-                <div class="lg:max-w-xs md:max-w-md">
-                    <h3 class="text-center lg:text-lg md:py-2 font-semibold">Flexbox Clon</h3>
+            <h2 class="lg:text-3xl text-2xl font-semibold lg:py-4 border-b-4 border-slate-900">Proyectos</h2>
+            <div class="flex flex-wrap lg:gap-4 gap-3 justify-around">
+                <div class="lg:max-w-xs max-w-md">
+                    <h3 class="text-center lg:text-lg py-2 font-semibold">Flexbox Clon</h3>
                     <a href="https://lorenzomarchione.github.io/tp3-flexbox-clon" target="_blank"><img class="rounded-lg shadow-md/50 hover:scale-103 transition duration-300" src="img/flexbox-clon.jpeg" alt="" ></a>
                     <p>Este es un Trabajo Práctico para la materia de Diseño Web. El objetivo fue replicar fielmente el diseño de una landing page profesional utilizando solamente HTML, CSS y Flexbox, sin el uso de frameworks.</p>
                 </div>
-                <div class="lg:max-w-xs md:max-w-md">
-                    <h3 class="text-center lg:text-lg md:py-2 font-semibold">🍽️ Rogier - Menú Digital Estático</h3>
+                <div class="lg:max-w-xs max-w-md">
+                    <h3 class="text-center lg:text-lg py-2 font-semibold">🍽️ Rogier - Menú Digital Estático</h3>
                     <a href="https://lorenzomarchione.github.io/menu-digital" target="_blank"><img class="rounded-lg shadow-md/50 hover:scale-103 transition duration-300" src="img/rogier.jpeg" alt=""></a>
                     <p>Este proyecto consiste en una página web simple que muestra el menú de un restaurante ficticio llamado Rogier. Fue realizado como parte de un trabajo practico del curso d desarrollador web</p>
                 </div>
-                <div class="lg:max-w-xs md:max-w-md">
-                    <h3 class="text-center lg:text-lg md:py-2 font-semibold">Tarjeta de Presentación</h3>
+                <div class="lg:max-w-xs max-w-md">
+                    <h3 class="text-center lg:text-lg py-2 font-semibold">Tarjeta de Presentación</h3>
                     <a href="https://lorenzomarchione.github.io/tarjeta-presentacion" target="_blank"><img class="rounded-lg shadow-md/50 hover:scale-103 transition duration-300" src="img/tarjeta-presentacion.jpeg" alt=""></a>
                     <p>Este proyecto es una tarjeta de presentación personal creada como parte del curso de Desarrollador Fullstack. Su objetivo es aplicar y reforzar conocimientos fundamentales de HTML y CSS en una estructura web simple.</p>
                 </div>
             </div>
         </section>
-        <section class="bg-slate-200 lg:px-10 lg:py-5 md:px-6 md:py-3">
-            <h2 class="lg:text-3xl md:text-2xl font-semibold lg:py-4 md:py-2 border-b-4 border-slate-900">Experiencia Laboral</h2>
-            <ul class="list-inside list-disc md:py-4">
+        <section class="bg-slate-200 lg:px-10 lg:py-5 px-6 py-3" id="experiencia-laboral">
+            <h2 class="lg:text-3xl text-2xl font-semibold lg:py-4 py-2 border-b-4 border-slate-900">Experiencia Laboral</h2>
+            <ul class="list-inside list-disc py-4">
                 <li>Actualmente no cuento con experiencia laboral en el área de desarrollo web o programación.</li>
                 <li>He realizado trabajos prácticos y proyectos personales que me han permitido adquirir habilidades en programación y desarrollo web.</li>
                 <li>Estoy buscando oportunidades para aplicar mis conocimientos y seguir aprendiendo en un entorno profesional.</li>
             </ul>
         </section>
-        <section class="lg:px-10 lg:py-5 md:px-6 md:py-3">
-            <h2 class="lg:text-3xl md:text-2xl font-semibold lg:py-4 md:py-2 border-b-4 border-slate-900">Habilidades</h2>
-            <ul class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 justify-items-stretch list-none lg:py-4 md:py-2">
+        <section class="lg:px-10 lg:py-5 px-6 py-3" id="tecnologias">
+            <h2 class="lg:text-3xl text-2xl font-semibold lg:py-4 py-2 border-b-4 border-slate-900">Tecnologias</h2>
+            <ul class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 justify-items-stretch list-none lg:py-4 py-2">
                 <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/java-logo.png" alt="Java"> Java</li>
                 <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/csharp-logo.png" alt="C#"> C#</li>
                 <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/mongodb-logo.png" alt="MongoDB"> MongoDB (NoSQL)</li>
@@ -77,10 +77,10 @@
                 <li class="h-20 border border-slate-900 flex flex-col justify-center items-center "><img class="w-6 h-6" src="img/git-logo.png" alt="Git"> Git y GitHub</li>
             </ul>
         </section>
-        <section class="lg:px-10 lg:py-5 md:px-6 md:py-3 bg-slate-200">
-            <h2 class="lg:text-3xl md:text-2xl font-semibold lg:py-4 md:py-2 border-b-4 border-slate-900">Contacteme!</h2>
+        <section class="lg:px-10 lg:py-5 px-6 py-3 bg-slate-200" id="contacto">
+            <h2 class="lg:text-3xl text-2xl font-semibold lg:py-4 py-2 border-b-4 border-slate-900">Contacteme!</h2>
             <form class="flex flex-col items-center lg:py-5" action="">
-                <div class="flex flex-row lg:gap-4 md:gap-6 max-w-1/3 w-full justify-center">
+                <div class="flex md:flex-row flex-col lg:gap-4 gap-6 md:max-w-1/3 md:w-full justify-center">
                     <div>
                         <h4 class="font-semibold">Nombre</h4>
                         <input class="bg-white border border-black rounded-sm" type="text" placeholder="Nombre" required>
@@ -90,21 +90,21 @@
                         <input class="bg-white border border-black rounded-sm" type="email" placeholder="Email" required>
                     </div>
                 </div>
-                <div class="mt-4 w-full lg:max-w-1/3 md:max-w-1/2">
+                <div class="mt-4 w-full lg:max-w-1/3 max-w-1/2">
                     <h4 class="font-semibold">Mensaje</h4>
                     <textarea class="w-full resize-none bg-white border border-black rounded-sm" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
                 </div>
-                <button class="bg-indigo-950 font-semibold text-white lg:py-2 lg:px-4 md:py-3 md:px-5 rounded-lg hover:bg-blue-800 hover:scale-105">Enviar</button>
+                <button class="bg-indigo-950 font-semibold text-white lg:py-2 lg:px-4 py-3 px-5 rounded-lg hover:bg-blue-800 hover:scale-105">Enviar</button>
             </form>
         </section>
-        <section class="lg:px-10 lg:py-5 md:px-6 md:py-3">
-            <h2 class="lg:text-3xl md:text-2xl font-semibold lg:py-4 md:py-2 border-b-4 border-slate-900">Redes Sociales y CV</h2>
-            <p class="text-center lg:py-2">Para ver mi currículum vitae y mis redes sociales, puedes visitar los siguientes enlaces:</p>
-            <ul class="list-none flex flex-row justify-center lg:gap-4 md:gap-8 lg:py-4 md:py-2">
-                <li><a class="hover:text-blue-600 hover:underline" href="https://github.com/LorenzoMarchione" target="_blank"> Mi GitHub</a></li>
-                <li><a class="hover:text-blue-600 hover:underline" href="" target="_blank"> Mi LinkedIn</a></li> <!-- todavia no tengo LinkedIn -->                    
+        <section class="lg:px-10 lg:py-5 px-6 py-3" id="github-cv">
+            <h2 class="lg:text-3xl text-2xl font-semibold lg:py-4 py-2 border-b-4 border-slate-900">GitHub y CV</h2>
+            <p class="text-center lg:py-2">Para ver mi currículum vitae y mi GitHub puedes visitar los siguientes enlaces:</p>
+            <ul class="list-none flex flex-row justify-center lg:gap-4 gap-8 lg:py-4 py-2">
+                <li><a class="hover:text-blue-600 hover:underline" href="https://github.com/LorenzoMarchione" target="_blank"> Mi GitHub</a></li>                    
                 <li><a class="hover:text-blue-600 hover:underline" href="">Descargue mi CV</a></li><!-- CV en proceso de creacion -->
-            </ul>     
+            </ul>
+            <script src="./js/app.js"></script>     
         </section>
     </main>
     

@@ -81,16 +81,16 @@
             <h2 class="lg:text-3xl text-2xl font-semibold lg:py-4 py-2 border-b-4 border-slate-900">Contacteme!</h2>
             <form class="flex flex-col items-center lg:py-5" action="">
                 <div class="flex md:flex-row flex-col lg:gap-4 gap-6 md:max-w-1/3 md:w-full justify-center">
-                    <div>
+                    <div id="nombre">
                         <h4 class="font-semibold">Nombre</h4>
-                        <input class="bg-white border border-black rounded-sm" type="text" placeholder="Nombre" required>
+                        <input class="bg-white border border-black rounded-sm" type="text" placeholder="Nombre">
                     </div>
-                    <div>
+                    <div id="email">
                         <h4 class="font-semibold">Email</h4>
-                        <input class="bg-white border border-black rounded-sm" type="email" placeholder="Email" required>
+                        <input class="bg-white border border-black rounded-sm" id="input-email" type="text" placeholder="Email">
                     </div>
                 </div>
-                <div class="mt-4 w-full lg:max-w-1/3 max-w-1/2">
+                <div class="mt-4 w-full lg:max-w-1/3 max-w-1/2" id="mensaje">
                     <h4 class="font-semibold">Mensaje</h4>
                     <textarea class="w-full resize-none bg-white border border-black rounded-sm" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
                 </div>

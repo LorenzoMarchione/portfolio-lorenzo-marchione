@@ -9,7 +9,7 @@ document.querySelectorAll('.scroll-btn').forEach(btn => {
 });
 // Validación y funcionamiento del formulario
 const form = document.querySelector('#contacto form');
-const originalFormHTML = form.innerHTML; // Guarda el HTML original
+const originalFormHTML = form.innerHTML; // Guardo el HTML original
 form.addEventListener('submit', function(e) {
     e.preventDefault(); // Evita el envío por defecto
 
@@ -17,7 +17,7 @@ form.addEventListener('submit', function(e) {
     let email = form.querySelector('#input-email').value.trim();
     let mensaje = form.querySelector('textarea[name="mensaje"]').value.trim();
 
-    // Validación básica
+    //me aseguro de que los campos no estén vacíos
     if (!nombre) {
         const nombrehtml = document.getElementById('nombre');
         nombrehtml.innerHTML = `
@@ -45,7 +45,7 @@ form.addEventListener('submit', function(e) {
         `;
         return;
     }
-    // Validación de email simple
+    // Validación de email simple (solo verifico formato no verifico si existe)
     if (!/\S+@\S+\.\S+/.test(email)) {
         const mailhtml = document.getElementById('email');
         mailhtml.innerHTML = `
@@ -55,7 +55,8 @@ form.addEventListener('submit', function(e) {
         `;
         return;
     }
-    form.innerHTML = originalFormHTML; // Restaura el HTML original del formulario
+    // Restauro el HTML original del formulario y muestro un mensaje de éxito
+    form.innerHTML = originalFormHTML; 
     mensajehtml = document.getElementById('mensaje');
     mensajehtml.innerHTML = `
         <h4 class="font-semibold">Mensaje</h4>

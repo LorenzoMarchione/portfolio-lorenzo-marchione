@@ -8,10 +8,13 @@
     <title>Portfolio</title>
 </head>
 <body class="font-sans bg-slate-50">
-    <header class="flex flex-col items-center border-b-4 border-slate-900 lg:px-5 lg:pt-4 px-3 pt-2 w-full">
+    <header class="flex flex-col items-center lg:px-5 lg:pt-4 px-3 pt-2 w-full">
         <h1 class="lg:text-4xl text-3xl text-2xl font-bold lg:py-2 py-1">Lorenzo Marchione</h1>
-        <nav>
-            <ul class="lg:flex lg:flex-row grid grid-cols-2 grid-rows-3 pb-3">
+
+    </header>
+    <main>
+        <nav class="lg:sticky lg:top-0 z-100 bg-slate-50 flex flex-col items-center border-b-4 border-slate-900 lg:px-5 lg:pt-0 px-3 pt-2 w-full">
+            <ul class="lg:flex lg:flex-row grid grid-cols-2 grid-rows-3 lg:pb-0 pb-3">
                 <li><button class="scroll-btn w-full lg:px-2 lg:py-4 py-2 hover:bg-slate-400 transition duration-300" data-target="presentacion">Presentación</button></li>
                 <li><button class="scroll-btn w-full lg:px-2 lg:py-4 py-2 hover:bg-slate-400 transition duration-300" data-target="proyectos">Proyectos</button></li>
                 <li><button class="scroll-btn w-full lg:px-2 lg:py-4 py-2 hover:bg-slate-400 transition duration-300" data-target="experiencia-laboral">Experiencia laboral</button></li>
@@ -20,8 +23,6 @@
                 <li><button class="scroll-btn w-full lg:px-2 lg:py-4 py-2 hover:bg-slate-400 transition duration-300" data-target="github-cv">GitHub y CV</button></li>
             </ul>
         </nav>
-    </header>
-    <main>
         <section class="bg-slate-200 flex flex-row justify-between lg:px-10 lg:py-5 pl-6 py-3 max-h-screen lg:gap-4" id="presentacion">
             <div class="flex flex-col lg:justify-around justify-center">
                 <h3 class="lg:text-2xl text-lg py-2 font-semibold">Lorenzo Esteban Marchione Revilla</h3>
